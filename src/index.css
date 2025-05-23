@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-dark text-white font-sans;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center px-6 py-3 rounded-lg font-semibold transition-all duration-300;
+  }
+
+  .btn-primary {
+    @apply bg-gradient-to-r from-electric to-purple text-white hover:from-electric-light hover:to-purple-light animate-pulse-slow;
+  }
+
+  .btn-secondary {
+    @apply border-2 border-electric text-electric hover:bg-electric/10;
+  }
+
+  .card {
+    @apply bg-dark-200/50 backdrop-blur-sm rounded-xl p-6 border border-dark-300/50;
+  }
+}
+
+.gradient-text {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-electric to-purple;
+}
